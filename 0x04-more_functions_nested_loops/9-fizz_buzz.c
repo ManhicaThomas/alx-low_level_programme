@@ -23,7 +23,7 @@ int main(void)
 		else if (i % 5 == 0)
 			printf("Buzz");
 		else
-			print("%i", i);
+			printf("%i", i);
 		if (i < 100)
 			printf(" ");
 	}
