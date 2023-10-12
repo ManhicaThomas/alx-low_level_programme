@@ -2,8 +2,8 @@
 /**
  * isdigit - write a function that check for a digit (0 through 9).
  * @c: inter to be checked
- * Return: 0 or 1
- **/
+ * Return: 1 if c is a digit, 0 otherwise
+ */
 int _isdigit(int c)
 {
 	if (c >= '0' && c <= '9')
