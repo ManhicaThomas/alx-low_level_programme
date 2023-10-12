@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * isdigit - function checks for a digit (0 through 9)
+ * _isdigit - function checks for a digit (0 through 9)
  * @c: inter to be checked
  * Return: 1 if c is a digit, 0 otherwise
  */
