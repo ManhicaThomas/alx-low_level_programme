@@ -8,7 +8,7 @@
  * If no set is matched - NULL.
  */
 
-char _strpbrk(char *s, char *accept)
+char *_strpbrk(char *s, char *accept)
 {
 	int i;
 
