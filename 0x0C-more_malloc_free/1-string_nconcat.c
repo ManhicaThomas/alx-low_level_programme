@@ -6,7 +6,8 @@
  * @s1: the first char
  * @s2: the second char
  * @n: unsigned int
- * Return: if the function fails then it will return NULL
+ *
+ * Return: if the function fails then it should return NULL
  */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
@@ -19,8 +20,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	}
 	else
 	{
-		for (a = 0; s1[a]; ++a)
-			;
+		for (a = 0; s1[a]; ++a);
 	}
 	if (s2 == NULL)
 	{
@@ -28,8 +28,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	}
 	else
 	{
-		for (b = 0; s2[b]; ++b)
-			;
+		for (b = 0; s2[b]; ++b);
 	}
 	if (b > n)
 		b = n;
@@ -40,6 +39,6 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		s[c] = s1[c];
 	for (c = 0; c < b; c++)
 		s[c + a] = s2[c];
-	s[c + b] = '\0';
+	s[a + b] = '\0';
 	return (s);
 }
