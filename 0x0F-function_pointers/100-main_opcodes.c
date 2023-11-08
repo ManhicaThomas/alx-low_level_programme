@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
- * print_opcode - print the opcode of this programs
+ * print_opcodes - print the opcodes of this program
  * @a: address of the main function
  * @n: number of bytes to print
  *
@@ -35,7 +35,7 @@ int main(int argc, char **argv)
 
 	if (argc != 2)
 	{
-		printf("error\n");
+		printf("Error\n");
 		exit(1);
 	}
 	n = atoi(argv[1]);
