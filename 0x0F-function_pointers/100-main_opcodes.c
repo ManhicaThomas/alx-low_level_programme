@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
- * priint_opcode - print the opcode of this programs
+ * print_opcode - print the opcode of this programs
  * @a: address of the main function
  * @n: number of bytes to print
  *
