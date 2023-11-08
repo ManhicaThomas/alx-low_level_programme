@@ -61,7 +61,7 @@ int op_mod(int a, int b)
 {
 	if (b == 0)
 	{
-		pritnf("Error\n");
+		printf("Error\n");
 		exit(100);
 	}
 

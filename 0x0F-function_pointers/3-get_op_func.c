@@ -21,7 +21,7 @@ int (*get_op_func(char *s))(int, int)
 
 	while (y < 5)
 	{
-		if (dtrcmp(s, ops[y].op) == 0)
+		if (strcmp(s, ops[y].op) == 0)
 			return (ops[y].f);
 
 		y++;
