@@ -14,15 +14,15 @@ void print_strings(const char *separator, const unsigned int n, ...)
 {
 	char *str;
 	unsigned int z;
-	va_list ap;
+	va_list strings;
 
-	va_start(ap, n);
+	va_start(strings, n);
 	if (separator == NULL)
 		separator = "";
 
 	for (z = 0; z < n; z++)
 	{
-		str = va_arg(ap, char*);
+		str = va_arg(strings, char*);
 		if (str == NULL)
 			str = "(nil)";
 		printf("%s", str);
@@ -30,5 +30,5 @@ void print_strings(const char *separator, const unsigned int n, ...)
 			printf("%s", separator);
 	}
 	printf("\n");
-	va_end(ap);
+	va_end(strings);
 }
