@@ -3,9 +3,8 @@
 #include <stdarg.h>
 
 /**
- * print_all - a function that prints anything.
- * @format: list of all types of arguments passed to the function.
- * Return: void
+ * print_all - This is a function that prints anything.
+ * @format: The list of all types of arguments passed to the function.
  */
 
 void print_all(const char * const format, ...)
@@ -28,7 +27,7 @@ void print_all(const char * const format, ...)
 
 					break;
 				case 'i':
-					printf("%s%i", sep, va_arg(list, int));
+					printf("%s%d", sep, va_arg(list, int));
 					break;
 				case 'f':
 					printf("%s%f", sep, va_arg(list, double));
@@ -47,7 +46,6 @@ void print_all(const char * const format, ...)
 			i++;
 		}
 	}
-
 
 	printf("\n");
 	va_end(list);
