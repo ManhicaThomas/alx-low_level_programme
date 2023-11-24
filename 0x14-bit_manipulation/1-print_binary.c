@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
  * print_binary - function that prints a binary equivalent
@@ -9,7 +10,7 @@
 void print_binary(unsigned long int n)
 {
 	int w, num = 0;
-	unsigned long int currrent;
+	unsigned long int current;
 
 	for (w = 63; w >= 0; w--)
 	{
