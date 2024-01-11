@@ -8,7 +8,7 @@
  * @n: the value of the element
  * Return: addresss of the new element
  */
-dlistint_t *add_nodeint_end(dlistint_t **head, const int n)
+dlistint_t *add_dnodeint_end(dlistint_t **head, const int n)
 {
 	dlistint_t *h;
 	dlistint_t *new;
