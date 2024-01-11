@@ -3,6 +3,7 @@
 /**
  * add_nodeint_end - this adds a new node at the end
  * of a dlistint_t list
+ *
  * @head: the head of the list
  * @n: the value of the element
  * Return: addresss of the new element
