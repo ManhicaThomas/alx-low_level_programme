@@ -5,8 +5,8 @@
 
 /**
  * hash_table_set - this adds or update an element in a ht
- * @ht: pointer to the ht
- * @key: key to add - cannot be an empty str
+ * @ht: the ht to add or update the key/value to
+ * @key: the key of a value
  * @value: value associated with key.
  * Return: upon failure - 0.
  *         Otherwise - 1.
