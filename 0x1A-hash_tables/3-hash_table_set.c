@@ -1,12 +1,15 @@
 #include "hash_tables.h"
+#include <stdlib.h>
+#include <string.h>
+#include <stdio.h>
 
 /**
- * hash_tables_set -  this adds or update an element in a hash table
+ * hash_table_set - this adds or update an element in a ht
  * @ht: pointer to the ht
- * @key: key to add - this cannot be an empty str
- * @value: value associated with key
- * Return: upon failure - 0
- * otherwise -1.
+ * @key: key to add - cannot be an empty str
+ * @value: value associated with key.
+ * Return: upon failure - 0.
+ *         Otherwise - 1.
  */
 int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 {
@@ -17,7 +20,7 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	if (ht == NULL || key == NULL || *key == '\0' || value == NULL)
 		return (0);
 
-	value_copy - strdup(value);
+	value_copy = strdup(value);
 	if (value_copy == NULL)
 		return (0);
 
